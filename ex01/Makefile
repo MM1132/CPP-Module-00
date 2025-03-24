@@ -1,7 +1,7 @@
 SRC_DIR := src
 OBJ_DIR := obj
 CC := c++
-CFLAGS := -Wall -Wextra -Werror -std=c++98
+CFLAGS := -Wall -Wextra -Werror -std=c++17
 IFLAGS := -Iinclude
 
 # Executable setup

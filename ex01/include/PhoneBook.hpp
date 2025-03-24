@@ -2,19 +2,24 @@
 #define PHONEBOOK_HPP
 
 #include "Contact.hpp"
+#include <iostream>
 
 class PhoneBook {
 	private:
 		static const int MAX_CONTACTS = 8;
-		Contact contacts[MAX_CONTACTS];
-		int contact_count;
+		Contact m_contacts[MAX_CONTACTS];
+		int m_contactCount;
 	
 	public:
 		PhoneBook();
-		
-		void addContact(Contact contact);
 
-		int get_contact_count();
+		// Gets input for a new contact and adds it to the array fo contacts
+		void createNewContact();
+
+		int getContactCount() const;
+
+		void print() const;
+		void printContactAt(int index) const;
 };
 
 #endif
